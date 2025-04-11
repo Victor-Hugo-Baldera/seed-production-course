@@ -35,7 +35,7 @@ url <- "https://docs.google.com/spreadsheets/d/1c7TJoo7CocyPumtJueQZEvETEQPnzLjw
 gs <- url %>% 
   as_sheets_id()
 
-fb12<- gs %>% 
+fb <- gs %>% 
   range_read(ss = .,sheet = "fb")
 
 ```
@@ -48,7 +48,7 @@ font <- c("Permanent Marker", "Tillana", "Courgette")
 huito_fonts(font)
 va <- 1.2
 
-label <- fb12 %>%
+label <- fb %>%
   mutate(color = case_when(
     FACTOR %in% "Con.Luz" ~ "blue",
     FACTOR %in%"Sin.Luz" ~ "red",
