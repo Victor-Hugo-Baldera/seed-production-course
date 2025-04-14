@@ -50,9 +50,8 @@ va <- 1.2
 
 label <- fb %>%
   mutate(color = case_when(
-    FACTOR %in% "Con.Luz" ~ "blue",
-    FACTOR %in%"Sin.Luz" ~ "red",
-    TRUE ~ "#30784c"
+    FACTOR %in% "Con Luz" ~ "blue"
+    , FACTOR %in% "Sin Luz" ~ "red"
   )) %>%
   label_layout(size = c(5.2, 9.25), border_color = "forestgreen"
                , border_width = 1.5) %>%
@@ -77,8 +76,8 @@ label <- fb %>%
   include_text(
     value = "FACTOR"
     , position = c(2.6, 2.5-va)
-               , size = 16
-    , color = "#30784c" 
+    , size = 16
+    , color = "color" 
     , font = font[1]
   ) %>%
   include_text(

@@ -7,7 +7,8 @@ gs <- as_sheets_id(url)
 fb <- gs %>% 
   range_read("seeds")
 
-font <- c("Courgette", "Tillana")
+font <- c("Lato", "Tillana")
+library(huito)
 
 huito_fonts(font)
 
@@ -29,6 +30,11 @@ label <- fb %>%
     , size = c(0.7, 0.7)
     , position = c(4.6, 2.6)
     ) %>% 
+  include_image(
+    value = "https://huito.inkaverse.com/img/scale.pdf"
+    , size = c(5, 1)
+    , position = c(2.5, 0.6)
+  ) %>%
   include_barcode(
      value = "barcode"
      , size = c(2, 2)
