@@ -62,7 +62,7 @@ label <- fb %>%
     opts = "image_scale(200)"
   ) %>%
   include_barcode(
-    value = "barcode",
+    value = "CODIGO",
    , size = c(4.8, 4.8)
     , position = c(2.6, 5.5-va)
   ) %>%
@@ -103,8 +103,8 @@ include_image(value = "https://huito.inkaverse.com/img/scale.pdf"
 
 label %>% 
   label_print(mode = "preview")
-label %>%
-  label_print(mode = "complete", filename = "etiquetas1", nlabels = 12)
+# label %>%
+#   label_print(mode = "complete", filename = "Etiqueta_G6", nlabels = 12)
 
 ```
 
