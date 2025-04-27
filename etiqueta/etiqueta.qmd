@@ -50,8 +50,8 @@ va <- 1.2
 
 label <- fb %>%
   mutate(color = case_when(
-    FACTOR %in% "Con Luz" ~ "blue"
-    , FACTOR %in% "Sin Luz" ~ "red"
+    factor %in% "Con_Luz" ~ "blue"
+    , factor %in% "Sin_Luz" ~ "red"
   )) %>%
   label_layout(size = c(5.2, 9.25), border_color = "forestgreen"
                , border_width = 1.5) %>%
@@ -62,7 +62,7 @@ label <- fb %>%
     opts = "image_scale(200)"
   ) %>%
   include_barcode(
-    value = "CODIGO",
+    value = "cod",
    , size = c(4.8, 4.8)
     , position = c(2.6, 5.5-va)
   ) %>%
@@ -74,14 +74,14 @@ label <- fb %>%
     font = font[1]
   ) %>%
   include_text(
-    value = "FACTOR"
+    value = "factor"
     , position = c(2.6, 2.5-va)
     , size = 16
     , color = "color" 
     , font = font[1]
   ) %>%
   include_text(
-    value = "PLOTS"
+    value = "plots"
     , position = c(4.3, 9.5-va)
     , size = 16
     , color = "black"
