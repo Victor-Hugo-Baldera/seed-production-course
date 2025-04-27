@@ -117,7 +117,7 @@ label <- label_layout(size = c(21, 29.7),
                , font[1]) %>% 
   
   include_text(value = "Oryza sativa"
-               , position = c( 10.5, 25)
+               , position = c( 10.5, 25.4)
                , size = 25
                , color = "white"
                , font[1]) %>%
