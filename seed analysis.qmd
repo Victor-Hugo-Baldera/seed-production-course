@@ -41,11 +41,6 @@ En cada táper se colocaron 50 semillas de quinua.
 -   Semillas de quinua: Se usaron 50 semillas por táper.
 
 # RESULTADOS
-
-**Tabla 1:  ANOVA **
-
-![Nota: El valor p (0.341) indica que el factor no tiene un efecto significativo.](Tabla%201.png "Tabla 1"){fig-align="center"}
-
 **Grafica 1: Numero de Semilla Germinación **
 
 ![Nota: Los tratamientos no muestran diferencias significativas.](grafica%201.png){fig-align="center"}
